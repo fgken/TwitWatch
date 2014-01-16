@@ -1,0 +1,2 @@
+#!/bin/sh
+javac TwitWatch.java TwitterWatcher.java -classpath ./twitter4j/lib/twitter4j-core-3.0.5.jar

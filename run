@@ -1,0 +1,17 @@
+#!/bin/sh
+
+MAIL="!!!!FIXME!!!!"
+ConsumerKey="!!!!FIXME!!!!"
+ConsumerSecret="!!!!FIXME!!!!"
+AccessToken="!!!!FIXME!!!!"
+AccessTokenSecret="!!!!FIXME!!!!"
+
+./build
+
+echo "MAIL="$MAIL
+echo "ConsumerKey="$ConsumerKey
+echo "ConsumerSecret="$ConsumerSecret
+echo "AccessToken="$AccessToken
+echo "AccessTokenSecret="$AccessTokenSecret
+
+java -classpath .:./twitter4j/lib/twitter4j-core-3.0.5.jar TwitWatch $MAIL $ConsumerKey $ConsumerSecret $AccessToken $AccessTokenSecret

@@ -1,0 +1,5 @@
+#!/bin/sh
+echo "====== Get twitter4j ======"
+wget http://twitter4j.org/archive/twitter4j-3.0.5.zip
+
+unzip ./twitter4j-3.0.5.zip -d twitter4j
